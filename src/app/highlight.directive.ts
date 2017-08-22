@@ -10,9 +10,12 @@ export class HighlightDirective {
   @Input('myHighlight')
   highlightColor: string;
 
+  @Input()
+  defaultColor: string = 'red';
+
   @HostListener('mouseenter')
   onMouseEnter() {
-    this.highlight(this.highlightColor || 'red');
+    this.highlight(this.highlightColor || this.defaultColor);
   }
 
   @HostListener('mouseleave')
