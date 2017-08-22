@@ -23,7 +23,7 @@ export class FlyingHeroesComponent implements OnInit {
     let hero = {name, canFly: this.canFly};
     console.log('hero=', hero);
 
-    this.heroes = this.heroes.concat(hero);
+    this.heroes.push(hero);
   }
 
   reset() {
