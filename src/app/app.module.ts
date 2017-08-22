@@ -6,6 +6,7 @@ import { AstronautComponent } from './astronaut.component';
 import { MissionControlComponent } from './missioncontrol.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { UnlessDirective } from './unless.directive';
     AstronautComponent,
     MissionControlComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    HeroBirthdayComponent
   ],
   imports: [
     BrowserModule
