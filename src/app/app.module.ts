@@ -10,6 +10,8 @@ import { UnlessDirective } from './unless.directive';
 import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-boost-calculator.component';
+import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
+import { FlyingHeroesPipe } from './flying-heroes.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-bo
     UnlessDirective,
     HeroBirthdayComponent,
     ExponentialStrengthPipe,
-    PowerBoostCalculatorComponent
+    PowerBoostCalculatorComponent,
+    FlyingHeroesComponent,
+    FlyingHeroesPipe
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+New hero:
+<input #box (keyup.enter)="addHero(box.value); box.value=''" placeholder="hero name">
+<label><input [(ngModel)]="canFly" type="checkbox"> Can fly?</label>
+<button (click)="reset()">Reset</button>
+
+<h3>Flying Heroes</h3>
+<div *ngFor="let hero of heroes | flyingHeroes">{{ hero.name }}</div>
+
+<h3>All Heroes</h3>
+<div *ngFor="let hero of heroes">{{ hero.name }}</div>
