@@ -8,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class HeroBirthdayComponent implements OnInit {
 
   birthday: Date = new Date(1988, 3, 15);
+  toggle: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  get format() {
+    return this.toggle ? 'shortDate' : 'fullDate';
+  }
+
+  toggleFormat() {
+    this.toggle = !this.toggle;
   }
 
 }

@@ -1,7 +1,6 @@
 <p>
-  The hero's birthday is {{ birthday | date }}
+  The hero's birthday is {{ birthday | date: format }}
 </p>
-<p>
-  The hero's birthday is {{ birthday | date: "MM/dd/yy" }}
-</p>
+
+<button (click)="toggleFormat()">Toggle Format</button>
 
