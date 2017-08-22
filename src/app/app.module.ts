@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AstronautComponent } from './astronaut.component';
@@ -8,6 +9,7 @@ import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
+import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-boost-calculator.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { ExponentialStrengthPipe } from './exponential-strength.pipe';
     HighlightDirective,
     UnlessDirective,
     HeroBirthdayComponent,
-    ExponentialStrengthPipe
+    ExponentialStrengthPipe,
+    PowerBoostCalculatorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
