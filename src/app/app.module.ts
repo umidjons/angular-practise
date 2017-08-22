@@ -7,6 +7,7 @@ import { MissionControlComponent } from './missioncontrol.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
     MissionControlComponent,
     HighlightDirective,
     UnlessDirective,
-    HeroBirthdayComponent
+    HeroBirthdayComponent,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule
