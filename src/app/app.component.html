@@ -1,2 +1,11 @@
-<p [myHighlight]>Highlight with default color</p>
-<p [myHighlight]="'green'">Highlight with green color</p>
+<h4>Pick a color:</h4>
+
+<ul>
+  <li *ngFor="let c of colors">
+    <label>
+      <input type="radio" (click)="color = c" name="colors"> {{c}}
+    </label>
+  </li>
+</ul>
+
+<p [myHighlight]="color">Hover over me</p>
