@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { AstronautComponent } from './astronaut.component';
 import { MissionControlComponent } from './missioncontrol.component';
 import { HighlightDirective } from './highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     AstronautComponent,
     MissionControlComponent,
-    HighlightDirective
+    HighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule

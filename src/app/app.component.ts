@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  color: string;
-  colors: string[] = ['lightgreen', 'yellow', 'cyan'];
+  
+  condition: boolean = false;
+
 }
