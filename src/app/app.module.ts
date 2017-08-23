@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AstronautComponent } from './astronaut.component';
@@ -13,6 +14,7 @@ import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-bo
 import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
 import { FlyingHeroesPipe } from './flying-heroes.pipe';
 import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-message.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-messa
     PowerBoostCalculatorComponent,
     FlyingHeroesComponent,
     FlyingHeroesPipe,
-    HeroAsyncMessageComponent
+    HeroAsyncMessageComponent,
+    HeroListComponent
   ],
   imports: [
     BrowserModule,
