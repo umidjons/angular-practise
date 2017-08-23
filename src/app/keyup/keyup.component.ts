@@ -13,8 +13,8 @@ export class KeyupComponent implements OnInit {
   ngOnInit() {
   }
 
-  onKey(event: any) {
-    this.values += event.key + ' | ';
+  onKey(event: KeyboardEvent) {
+    this.values += (<HTMLInputElement>event.target).value + ' | ';
   }
 
 }
