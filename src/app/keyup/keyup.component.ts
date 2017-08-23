@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./keyup.component.css']
 })
 export class KeyupComponent implements OnInit {
+  values: string = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onKey(value: string) {
+    this.values += value + ' | ';
   }
 
 }
