@@ -17,6 +17,7 @@ import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-messa
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { ClickMeComponent } from './click-me/click-me.component';
 import { KeyupComponent } from './keyup/keyup.component';
+import { LittleHeroesTourComponent } from './little-heroes-tour/little-heroes-tour.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { KeyupComponent } from './keyup/keyup.component';
     HeroAsyncMessageComponent,
     HeroListComponent,
     ClickMeComponent,
-    KeyupComponent
+    KeyupComponent,
+    LittleHeroesTourComponent
   ],
   imports: [
     BrowserModule,
