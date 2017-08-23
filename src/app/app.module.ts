@@ -16,6 +16,7 @@ import { FlyingHeroesPipe } from './flying-heroes.pipe';
 import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-message.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { ClickMeComponent } from './click-me/click-me.component';
+import { KeyupComponent } from './keyup/keyup.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ClickMeComponent } from './click-me/click-me.component';
     FlyingHeroesPipe,
     HeroAsyncMessageComponent,
     HeroListComponent,
-    ClickMeComponent
+    ClickMeComponent,
+    KeyupComponent
   ],
   imports: [
     BrowserModule,
