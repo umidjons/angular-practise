@@ -18,6 +18,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { ClickMeComponent } from './click-me/click-me.component';
 import { KeyupComponent } from './keyup/keyup.component';
 import { LittleHeroesTourComponent } from './little-heroes-tour/little-heroes-tour.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LittleHeroesTourComponent } from './little-heroes-tour/little-heroes-to
     HeroListComponent,
     ClickMeComponent,
     KeyupComponent,
-    LittleHeroesTourComponent
+    LittleHeroesTourComponent,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,
