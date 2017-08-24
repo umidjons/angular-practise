@@ -2,6 +2,10 @@
 
 <h3><i>Just a FormControl</i></h3>
 
-<label class="center-block">Name:
-  <input class="form-control" [formControl]="name">
-</label>
+<form [formGroup]="heroForm" novalidate>
+  <div class="form-group">
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="name">
+    </label>
+  </div>
+</form>
