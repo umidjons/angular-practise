@@ -19,6 +19,7 @@ import { ClickMeComponent } from './click-me/click-me.component';
 import { KeyupComponent } from './keyup/keyup.component';
 import { LittleHeroesTourComponent } from './little-heroes-tour/little-heroes-tour.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
+import { ForbiddenValidatorDirective } from './forbidden-name.directive';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
     ClickMeComponent,
     KeyupComponent,
     LittleHeroesTourComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    ForbiddenValidatorDirective
   ],
   imports: [
     BrowserModule,
