@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -20,6 +20,7 @@ import { KeyupComponent } from './keyup/keyup.component';
 import { LittleHeroesTourComponent } from './little-heroes-tour/little-heroes-tour.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { ForbiddenValidatorDirective } from './forbidden-name.directive';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -39,11 +40,13 @@ import { ForbiddenValidatorDirective } from './forbidden-name.directive';
     KeyupComponent,
     LittleHeroesTourComponent,
     HeroFormComponent,
-    ForbiddenValidatorDirective
+    ForbiddenValidatorDirective,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
