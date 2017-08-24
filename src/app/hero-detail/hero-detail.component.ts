@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { states } from '../data-model';
 
 @Component({
   selector: 'hero-detail',
@@ -9,6 +10,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class HeroDetailComponent implements OnInit {
   
   heroForm: FormGroup;
+  states = states;
   
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -19,7 +21,13 @@ export class HeroDetailComponent implements OnInit {
 
   createForm() {
     this.heroForm = this.fb.group({
-      name: ''
+      name: ['', Validators.required],
+      street: '',
+      city: '',
+      state: '',
+      zip: '',
+      power: '',
+      sidekick: ''
     });
   }
 
