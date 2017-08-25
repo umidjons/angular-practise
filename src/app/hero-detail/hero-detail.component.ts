@@ -11,12 +11,14 @@ export class HeroDetailComponent implements OnInit, OnChanges {
   
   heroForm: FormGroup;
   states = states;
+  nameChangeLog: string[] = [];
 
   @Input()
   hero: Hero;
   
   constructor(private fb: FormBuilder) {
     this.createForm();
+    this.logNameChange();
   }
 
   ngOnInit() {
@@ -54,5 +56,10 @@ export class HeroDetailComponent implements OnInit, OnChanges {
 
   removeLair(idx) {
     this.secretLairs.removeAt(idx);
+  }
+
+  logNameChange() {
+    const nameControl = this.heroForm.get('name');
+    nameControl.valueChanges.forEach((value: string) => this.nameChangeLog.push(value));
   }
 }
