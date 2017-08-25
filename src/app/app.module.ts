@@ -21,6 +21,8 @@ import { LittleHeroesTourComponent } from './little-heroes-tour/little-heroes-to
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { ForbiddenValidatorDirective } from './forbidden-name.directive';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     LittleHeroesTourComponent,
     HeroFormComponent,
     ForbiddenValidatorDirective,
-    HeroDetailComponent
+    HeroDetailComponent,
+    DynamicFormComponent,
+    DynamicFormQuestionComponent
   ],
   imports: [
     BrowserModule,
