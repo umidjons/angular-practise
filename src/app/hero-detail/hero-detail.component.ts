@@ -51,4 +51,8 @@ export class HeroDetailComponent implements OnInit, OnChanges {
   addLair() {
     this.secretLairs.push(this.fb.group(new Address()));
   }
+
+  removeLair(idx) {
+    this.secretLairs.removeAt(idx);
+  }
 }
