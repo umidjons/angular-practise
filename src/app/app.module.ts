@@ -23,6 +23,7 @@ import { ForbiddenValidatorDirective } from './forbidden-name.directive';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
+import { LoggerService } from './logger.service';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,7 @@ import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-fo
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
