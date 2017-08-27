@@ -24,6 +24,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 import { LoggerService } from './logger.service';
+import { BetterLoggerService } from './better-logger.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { LoggerService } from './logger.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [LoggerService],
+  providers: [{provide: LoggerService, useClass: BetterLoggerService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
