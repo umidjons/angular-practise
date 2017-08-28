@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AstronautComponent } from './astronaut.component';
@@ -25,6 +26,14 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 import { LoggerService } from './logger.service';
 import { BetterLoggerService } from './better-logger.service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+const appRoutes: Routes = [
+  { path: 'click-me', component: ClickMeComponent },
+  { path: 'hero-form', component: HeroFormComponent },
+  { path: '', redirectTo: '/hero-form', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
+];
 
 @NgModule({
   declarations: [
@@ -47,12 +56,14 @@ import { BetterLoggerService } from './better-logger.service';
     ForbiddenValidatorDirective,
     HeroDetailComponent,
     DynamicFormComponent,
-    DynamicFormQuestionComponent
+    DynamicFormQuestionComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes, { enableTracing: true })
   ],
   providers: [{provide: LoggerService, useClass: BetterLoggerService}],
   bootstrap: [AppComponent]
