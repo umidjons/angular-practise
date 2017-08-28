@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { AstronautComponent } from './astronaut.component';
 import { MissionControlComponent } from './missioncontrol.component';
@@ -63,7 +65,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true })
+    AppRoutingModule
   ],
   providers: [{provide: LoggerService, useClass: BetterLoggerService}],
   bootstrap: [AppComponent]
