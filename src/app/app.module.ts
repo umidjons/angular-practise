@@ -29,13 +29,8 @@ import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-fo
 import { LoggerService } from './logger.service';
 import { BetterLoggerService } from './better-logger.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
-const appRoutes: Routes = [
-  { path: 'click-me', component: ClickMeComponent },
-  { path: 'hero-form', component: HeroFormComponent },
-  { path: '', redirectTo: '/hero-form', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
-];
+import { SortPipe } from './sort.pipe';
+import { SortComponent } from './sort/sort.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +54,9 @@ const appRoutes: Routes = [
     HeroDetailComponent,
     DynamicFormComponent,
     DynamicFormQuestionComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SortPipe,
+    SortComponent
   ],
   imports: [
     BrowserModule,
