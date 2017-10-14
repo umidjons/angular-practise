@@ -31,6 +31,7 @@ import { BetterLoggerService } from './better-logger.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SortPipe } from './sort.pipe';
 import { SortComponent } from './sort/sort.component';
+import { FlipperComponent } from './flipper/flipper.component';
 
 @NgModule({
   declarations: [
@@ -56,13 +57,15 @@ import { SortComponent } from './sort/sort.component';
     DynamicFormQuestionComponent,
     PageNotFoundComponent,
     SortPipe,
-    SortComponent
+    SortComponent,
+    FlipperComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [{provide: LoggerService, useClass: BetterLoggerService}],
   bootstrap: [AppComponent]
